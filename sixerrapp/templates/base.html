@@ -1,0 +1,23 @@
+{% load staticfiles %}
+<!--<!DOCTYPE html>-->
+<html lang="en">
+<head>
+
+    <title>Title</title>
+    <link rel="shortcut icon" href="{% static 'img/logo1.png' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/app.css' %}">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+ <div>
+     Header
+ </div>
+ <hr/>
+ {% block page%}
+ {% endblock %}
+ <div>
+    Footer
+</div>
+</body>
+</html>
