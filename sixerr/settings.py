@@ -41,6 +41,9 @@ INSTALLED_APPS = [
 # Register Apps
     'sixerrapp',
 
+# Facebook Login
+    'social.apps.django_app.default',
+
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -67,6 +70,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'social.apps.django_app.context_processors.backends',
+                'social.apps.django_app.context_processors.login_redirect',
             ],
         },
     },
@@ -123,3 +128,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# Facebook Set Up
+AUTHENTICATION_BACKENDS = (
+    'social.backends.facebook.FacebookOAuth2',
+    'django.contrib.auth.backends.ModelBackend'
+)
+
+LOGIN_REDIRECT_URL = '/'
+
+SOCIAL_AUTH_FACEBOOK_KEY = '1946431722236901'
+SOCIAL_AUTH_FACEBOOK_SECRET = '65f91aff8f27d0fbf209c7ad1066aa67'
