@@ -142,3 +142,9 @@ LOGIN_REDIRECT_URL = '/'
 
 SOCIAL_AUTH_FACEBOOK_KEY = '1946431722236901'
 SOCIAL_AUTH_FACEBOOK_SECRET = '65f91aff8f27d0fbf209c7ad1066aa67'
+
+
+# Replace database setting to use postgresql on Heroku
+import dj_database_url
+db_from_env = dj_database_url.config()
+DATABASES['default'].update(db_from_env)
