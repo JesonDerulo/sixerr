@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65b4bd2f-a697-427e-998c-fd3f033ea023" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sixerrapp/templates/home.html" afterPath="$PROJECT_DIR$/sixerrapp/templates/home.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,8 +39,8 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sixerrapp/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="44" lean-forward="false" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+            <state relative-caret-position="66">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -75,8 +74,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="35" />
-    <option name="y" value="24" />
+    <option name="x" value="32" />
+    <option name="y" value="86" />
     <option name="width" value="1245" />
     <option name="height" value="763" />
   </component>
@@ -168,7 +167,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="35" y="24" width="1245" height="763" extended-state="0" />
+    <frame x="32" y="86" width="1245" height="763" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27597672" sideWeight="0.49376947" order="0" side_tool="false" content_ui="combo" />
@@ -546,8 +545,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sixerrapp/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="44" lean-forward="false" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+        <state relative-caret-position="66">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
