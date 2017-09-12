@@ -89,7 +89,10 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
+# Replace database setting to use postgresql on Heroku
+import dj_database_url
+db_from_env = dj_database_url.config()
+DATABASES['default'].update(db_from_env)
 
 # Password validation
 # https://docs.djangoproject.com/en/1.9/ref/settings/#auth-password-validators
@@ -144,7 +147,4 @@ SOCIAL_AUTH_FACEBOOK_KEY = '1946431722236901'
 SOCIAL_AUTH_FACEBOOK_SECRET = '65f91aff8f27d0fbf209c7ad1066aa67'
 
 
-# Replace database setting to use postgresql on Heroku
-import dj_database_url
-db_from_env = dj_database_url.config()
-DATABASES['default'].update(db_from_env)
+
