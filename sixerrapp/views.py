@@ -33,6 +33,10 @@ def create_gig(request):
     return render(request, 'create_gig.html', {"error": error})
 
 @login_required(login_url="/")
+def edit_gig(request, id):
+    return render(request,'edit_gig.html', {})
+
+@login_required(login_url="/")
 def my_gigs(request):
     gigs = Gig.objects.filter(user=request.user)
     return render(request, 'my_gigs.html', {"gigs": gigs })
