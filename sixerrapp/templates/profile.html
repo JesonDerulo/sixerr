@@ -2,7 +2,17 @@
 {% load staticfiles %}
 
 {% block page %}
-<p></p>
-<h1>Profile Page is Working</h1>
+ <div class="jumbotron text-center">
+    <h1><b>{{ profile.user.username }}</b></h1>
+     <p>{{ profile.slogan }}</p>
+ </div>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <img src="{{ profile.avatar }}" class="img-circle" height="120" width="120">
+        <h3 class="text-uppercase"><b>{{ profile.user.username }}</b></h3>
+        <hr/>
+        <p>{{ profile.about }}</p>
+    </div>
+</div>
 {% endblock %}
 
